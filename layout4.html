@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      *
+      {
+        box-sizing: border-box;
+      }  
+       body{
+        margin: 0;
+        padding: 0;
+      overflow-x: hidden;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+       }
+       .img1{
+        width: 100%;
+        
+       }
+       .mainlist{
+
+        position: absolute;
+        display: flex;
+        top: 0px;
+        left: 600px;
+       }
+       .sublist{
+        
+        list-style: none;
+        padding: 20px 30px;
+        
+       }
+       .sublist a{
+        
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+       }
+       
+       .mainlist2{
+
+        position: absolute;
+        top: 20px;
+        
+       }
+       .sublist2{
+        list-style-type: none;
+       }
+       .sublist2 a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+       }
+       .sublist2 a i{
+        padding-right: 5px;
+       }
+       .img2{
+        position: absolute;
+        top: 100px;
+        left: 270px;
+        justify-content: center;
+        display: block;
+    
+       }
+    .head2{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.8rem;
+        position: absolute;
+        top: 280px;
+        display: flex;
+        left: 230px;
+        color: white;
+    }
+    
+    .label1{
+        width: 60%;
+        position: absolute;
+        top: 400px;
+        left: 270px;
+        height: 50px;
+        border: none;
+       outline: none;
+        border-radius: 10px;
+
+    }
+    .label1::placeholder{
+        font-size: 18px;
+        color: black;
+        padding-left: 90px;
+
+    }
+    .sec2{
+        display: flex;
+        margin: 30px 30px;
+        margin-top: 80px;
+        
+    }
+    .imgcontainer
+    {
+        
+        position: relative;
+       margin: 50px 10px;
+        width: 50%;
+       
+    }
+    .imgcontainer img{
+        width: 100%;
+        border-radius: 20px;
+        height: 50%;
+        transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+    transition-property: opacity, transform;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    }
+    .imgcontainer img:hover{
+
+        /* width: 100%;
+        height: 60% ;
+        transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+    transition-property: opacity, transform;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s; */
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+    .imgcontainer2
+    {
+        /* border: 2px solid black; */
+        position: relative;
+        margin-top: 50px;
+        width: 50%;
+        margin: 50px 40px;
+    }
+    .imgcontainer2 img{
+        width: 100%;
+        border-radius: 20px;
+        height: 50%;
+        transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+    transition-property: opacity, transform;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+
+    }
+    .imgcontainer2 img:hover{
+
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+    .collection{
+    
+       right: 800px;
+    }
+    .main4
+    {
+        width: 100%;
+        display: flex;
+        margin: 0px 20px;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+       
+    }
+    .main3 h1{
+        font-family: sans-serif;
+    }
+    .main4 img{
+
+        margin: 0px 20px;
+        border-radius: 10px;
+        /* height: 50%; */
+        transition: all 0.2s ease-in-out;
+    }
+    .main4 img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .main5
+    {
+        width: 500px;
+        margin-left: 60px;
+        
+    }
+    .popular
+    {
+       display: block;
+       letter-spacing: 5px;
+       margin: 10px 20px;
+       text-align: center;
+    }
+    
+    .mainlist3
+    {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .sublist3
+    {
+        /* border: 2px solid rgb(216, 209, 209); */
+        list-style: none;
+        margin: 20px 5px;
+        padding: 10px 10px;
+        height: 80px;
+        width: 1500px;
+        
+    }
+    .main5 a{
+
+        text-align: center;
+        width: 350px;
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px;
+        box-shadow: 10px 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    .main5 a:hover{
+        transform: scale(1.1);
+    }
+    .main6
+    {
+        width: 500px;
+        margin-left: 60px;
+        
+    }
+    
+    .mainlist4
+    {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .sublist4
+    {
+        /* border: 2px solid black; */
+        list-style: none;
+        margin: 20px 5px;
+        padding: 10px 10px;
+        height: 80px;
+        width: 1500px;
+        
+    }
+    .main6 a{
+
+        text-align: center;
+        width: 350px;
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px;
+        box-shadow: 10px 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    .main6 a:hover{
+        transform: scale(1.1);
+    }
+    .main7
+    {
+        width: 500px;
+        margin-left: 60px;
+        
+    }
+    
+    .mainlist5
+    {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .sublist5
+    {
+        /* border: 2px solid black; */
+        list-style: none;
+        margin: 20px 5px;
+        padding: 10px 10px;
+        height: 80px;
+        width: 1500px;
+        
+    }
+    .main7 a{
+
+        text-align: center;
+        width: 350px;
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px;
+        box-shadow: 10px 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    .main7 a:hover{
+        transform: scale(1.1);
+    }
+    .main8
+    {
+        /* width: 500px;
+        height: 500px; */
+        text-align: center;
+        margin-top: 90px;
+        background-color: rgb(255, 251, 247);
+        display: flex;
+        margin-left: 250px;
+        
+    }
+    .input
+    {
+        margin: 10px 30px;
+        font-family: sans-serif;
+        font-size: large;
+    }
+    .em
+    {
+        margin: 10px 20px;
+        padding: 10px 20px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid rgb(226, 209, 209);
+    }
+    .em::placeholder
+    {
+        font-family: sans-serif;
+        font-weight: bold;
+        height: 80px;
+
+    }
+    .btn
+    {
+
+        height: 40px;
+        width: 200px;
+        border-radius: 5px;
+        border: 2px solid none;
+        
+        border-style: none;
+        background-color: crimson;
+        color: beige;
+        font-family: sans-serif;
+        font-size: large;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn:hover{
+            transform: scale(1.1);
+            background-color: beige;
+            color: crimson;
+        box-shadow: 5px 10px 10px;
+    }
+    .question
+    {
+       width: 500px;
+       height:500px;
+      
+    }
+   .opt
+   {
+    margin-top: 100px;
+   margin-left: 100px;
+   }
+  .slct
+  {
+    height: 60px;
+    margin: 20px 100px;
+    width: 1150px;
+    border-radius: 10px;
+    border-color: rgb(211, 203, 203);
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .plar
+  {
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+  .slct:hover{
+   box-shadow: 5px 1px 15px grey;
+
+  }
+  .foot
+  {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 230, 230);
+    display: flex;
+    margin: 20px 30px;
+    
+  }
+  .main10
+  {
+    
+    padding: 30px 40px;
+  }
+  .main10 li{
+    list-style-type: none;
+  }
+  .main10 li a{
+    text-decoration: none;
+    padding: 10px 5px;
+  
+    font-family: sans-serif;
+  }
+  .btn3
+  {
+    height: 35px;
+    width: 120px;
+    margin-left: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* border: 2px solid rgb(215, 206, 206);
+    border-radius: 10px;
+    border-color: grey;
+     */
+     border-radius: 5px;
+  }
+  .btn4
+  {
+    height: 35px;
+    width: 120px;
+    margin-right: 50px;
+    border-radius: 5px;
+  }
+  
+  
+  
+    </style>
+</head>
+<body>
+    <header class="head1">
+        <div class="main">
+            <div class="img1">
+                <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="" class="img1" height="600px">
+            </div>
+        </div>
+    </header>
+    <nav class="nav1">
+        <div class="main2">
+          <div class="list">
+            <ul class="mainlist" aria-expanded="false" aria-label="navbar">
+              
+                <li class="sublist"><a href="">Investor Relations</a></li>
+                <li class="sublist"><a href="">Add Restaurants</a></li>
+                <li class="sublist"><a href="">Log in</a></li>
+                <li class="sublist"><a href="">Sign up</a></li>
+        
+
+            </ul>
+          </div>
+          <div class="list2">
+            <ul class="mainlist2">
+                <li class="sublist2"><a href=""><i class="fa fa-mobile-phone"></i>get the app</a></li>
+            </ul>
+          </div>
+
+        </div>
+    </nav>
+    <section>
+        <div class="img2">
+            <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="" class="img2" height="60px">
+        </div>
+        <div class="header2">
+            <h1 class="head2">Discover the Best Food and Drinks in Ahmedabad</h1>
+        </div>
+        <div class="navbar2">
+            <input type="text"  placeholder= "       Ahmedabad      |    &#128269; Search for restaurant , cuisine or a dish" class="label1">
+        </div>
+    </section>
+    <section class="sec2">
+
+        <div class="imgcontainer">
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="">
+            <div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                
+            </div>
+            <div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+            </div>
+           <h1><strong>Order Online</strong></h1>
+           <h3>Stay home and Order to  your doorstep</h3>
+           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, dignissimos!</h3>
+           <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, error.</h3>
+           <h3>Lorem ipsum dolor sit amet.</h3>
+           <h3>Lorem, ipsum dolor.</h3>
+        </div>
+        <div class="imgcontainer2">
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="">
+            <div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                
+            </div>
+            <div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+            </div>
+            
+           <h1><strong>Dining</strong></h1>
+           <h3>View the city's favourite dining venues</h3>
+           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, autem.</h3>
+           <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, magni!</h3>
+           <h3>Lorem ipsum dolor sit amet.</h3>
+           <h3>Lorem, ipsum dolor.</h3>
+        </div>
+        
+
+    </section>
+
+    <section class="main3">
+        <h1><strong>&nbsp; &nbsp; &nbsp; Collections</strong></h1>
+        <h3>&nbsp; &nbsp; &nbsp; &nbsp; Explore curated lists of top restaurants, cafes, pubs, and bars in Ahmedabad, based on trends &</h3>
+       
+        <div class="main4">
+           
+            <div class="img4">
+                <img src="https://b.zmtcdn.com/data/collections/f6d732dc7432ad6e80a309cce6f0745a_1665640262.jpg?output-format=webp" alt="" height="280px">
+            </div>
+            <div class="img5">
+                <img src="https://b.zmtcdn.com/data/collections/39b0427da9d6363255240e6f0fef17b6_1665830257.jpg?output-format=webp" alt="" height="280px">
+            </div>
+            <div class="img6">
+                <img src="https://b.zmtcdn.com/data/collections/454e33b19950986d4c7c34bc70f99ada_1612856400.jpg?output-format=webp" alt="" height="280px">
+            </div>
+            <div class="img7">
+                <img src="https://b.zmtcdn.com/data/collections/7f3c488e727f84dc7093c8fdd76a4526_1665830411.jpg?output-format=webp" alt="" height="280px">
+            </div>
+            <!-- <h1 class="popular">Popular Localities in and around Ahmedabad</h1> -->
+        </div>
+    </section>
+    <h1 class="popular">Popular Localities in and around <strong>Ahmedabad</strong> </h1>
+    <section class="main5">
+       
+        <ul class="mainlist3">
+          <li class="sublist3"><a href="#">Bodakdev
+            <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+          </a></li>
+          <li class="sublist3"><a href="#">Navrangpur
+            <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+          </a></li>
+          <li class="sublist3"><a href="#">Prahlad Nagar
+            <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+          </a></li>
+         
+          
+
+        </ul>
+    </section>
+    <section class="main6">
+        <ul class="mainlist4">
+            <li class="sublist4"><a href="">Satellite
+                <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+            </a></li>            
+            <li class="sublist4"><a href="">C G Road
+                <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+            </a></li>            
+            <li class="sublist4"><a href="">Vastrapur
+                <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+            </a></li>            
+
+        </ul>
+    </section>
+    <section class="main7">
+        <ul class="mainlist5">
+            <li class="sublist5"><a href="">Gurukul
+                <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+            </a></li>            
+            <li class="sublist5"><a href="">Thaltej
+                <i class="sc-rbbb40-1 iFnyeo sc-ewTrYR eMdenC" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg></i>
+            </a></li>            
+            <li class="sublist5"><a href="">See More
+                <i class="sc-rbbb40-1 iFnyeo" size="18" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></i>
+            </a></li>            
+
+        </ul>
+    </section>
+    <section class="main8">
+        <div class="phnimg">
+            <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="" height="300px">
+        </div>
+        <div class="mainsub8">
+        <div class="app">
+            <h1>Get the Zomato app</h1>
+            <h4>we will send you a link, open it on your phone to download the app</h4>
+            
+        </div>
+        <div class="input">
+            <input type="radio" name="choose" id="">&nbsp;Email&nbsp;&nbsp;
+            <input type="radio" name="choose">&nbsp;Phone
+            
+        </div>
+        <div class="input2">
+            <input type="text" placeholder="Email" class="em" height="50px">&nbsp;&nbsp;
+            <button class="btn">Share App Link</button>
+        </div>
+        <div class="img7">
+            <h4>Download app from</h4>
+        </div>
+        <div class="apple">
+            <a href="#"><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" height="50px"></a>
+            <a href="#"><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" height="50px"></a>
+           
+        </div>
+        </div>
+    </section>
+    <section class="question">
+        <h1 class="opt">Explore options near me</h1>
+        <label for="" class="qna">
+            <select name="" id="" class="slct">
+               <option value="" class="plar" hidden>
+
+               Popular Cuisines near me
+               
+               </option>
+               <option>
+                <ul class="foodlist">
+                    <li class="subfoodlist"><a href="">Bakery Food near me</a></li>
+                    <li class="subfoodlist"><a href="">Beverages near me</a></li>
+                    <li class="subfoodlist"><a href="">Biryani food near me</a></li>
+                    <li class="subfoodlist"><a href=""></a></li>
+                    <li class="subfoodlist"><a href=""></a></li>
+                </ul>
+            </option>
+            
+            </select>
+            <select name="" id="" class="slct">
+                <option value="" class="plar" hidden>
+ 
+                Popular Restaurant types near me
+                
+                </option>
+                <option>
+                 <ul class="foodlist">
+                     <li class="subfoodlist"><a href="">Casual Dinning near me</a></li>
+                     <li class="subfoodlist"><a href="">Bhojnalaya near me</a></li>
+                     <li class="subfoodlist"><a href="">Fine Drinking near me</a></li>
+                     <li class="subfoodlist"><a href="">Lounges near me</a></li>
+                     <li class="subfoodlist"><a href="">Dhaba near me</a></li>
+                 </ul>
+             </option>
+             
+             </select>
+             <select name="" id="" class="slct">
+                <option value="" class="plar" hidden>
+ 
+                Top Restaurants Chains
+                
+                </option>
+                <option>
+                 <ul class="foodlist">
+                     <li class="subfoodlist"><a href="">Mc Donald's</a></li>
+                     <li class="subfoodlist"><a href="">Burger King</a></li>
+                     <li class="subfoodlist"><a href="">KFC</a></li>
+                     <li class="subfoodlist"><a href="">Bikanerwala</a></li>
+                     <li class="subfoodlist"><a href="">William John's</a></li>
+                 </ul>
+             </option>
+             
+             </select>
+             <select name="" id="" class="slct">
+                <option value="" class="plar" hidden>
+ 
+                Popular Restaurant types near me
+                
+                </option>
+                <option>
+                 <ul class="foodlist">
+                     <li class="subfoodlist"><a href="">Casual Dinning near me</a></li>
+                     <li class="subfoodlist"><a href="">Bhojnalaya near me</a></li>
+                     <li class="subfoodlist"><a href="">Fine Drinking near me</a></li>
+                     <li class="subfoodlist"><a href="">Lounges near me</a></li>
+                     <li class="subfoodlist"><a href="">Dhaba near me</a></li>
+                 </ul>
+             </option>
+             
+             </select>
+        </label>
+    </section>
+   <footer class="foot">
+    
+    <div class="main10">
+        
+        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+        &nbsp;
+        <ul class="mainfoot">
+            
+           <li><h3>About Zomato</h3></li>
+            <li class="subfoot"><a href="">Who we are</a></li>
+            <li class="subfoot"><a href="">Blog</a></li>
+            <li class="subfoot"><a href="">Work with us</a></li>
+            <li class="subfoot"><a href="">Investor Relations</a></li>
+            <li class="subfoot"><a href="">Report Fraud</a></li>
+            <li class="subfoot"><a href="">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="main10">
+        &nbsp; 
+        <ul class="mainfoot">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+           <li><h3>Zomaverse</h3></li>
+            <li class="subfoot"><a href="">Zomato</a></li>
+            <li class="subfoot"><a href="">Feeding India</a></li>
+            <li class="subfoot"><a href="">Hypepure</a></li>
+            <li class="subfoot"><a href="">Zomaland</a></li>
+            
+        </ul>
+    </div>
+    <div class="main10">
+        &nbsp;
+        <ul class="mainfoot">
+            &nbsp;&nbsp;&nbsp;&nbsp;    
+           <li><h3>For Restaurants</h3></li>
+            <li class="subfoot"><a href="">Partners with us</a></li>
+            <li class="subfoot"><a href="">Apps for you</a></li>
+            <li><h3>For Enterprise</h3></li>
+            <li class="subfoot"><a href="">Zomato for work</a></li>
+        </ul>
+    </div>
+    <div class="main10">
+       
+        <ul class="mainfoot">
+            <button class="btn3"><img src="https://banner2.cleanpng.com/20180403/eow/kisspng-flag-of-india-t-shirt-national-flag-indian-flag-5ac38ac5ef05a3.3128564315227644859791.jpg" alt="" height="10px"> India
+                <i class="sc-rbbb40-1 iFnyeo" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></i>
+            </button>
+           <li><h3>Learn More</h3></li>
+            <li class="subfoot"><a href="">Privacy</a></li>
+            <li class="subfoot"><a href="">Terms</a></li>
+            <li class="subfoot"><a href="">Cities</a></li>
+            <li class="subfoot"><a href="">Sitemap</a></li>
+        </ul>
+    </div>
+    <div class="main10">
+        <ul class="mainfoot">
+            <button class="btn4"><i class="sc-rbbb40-1 iFnyeo" size="18" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>language-globe</title><path d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"></path></svg></i> English <i class="sc-rbbb40-1 iFnyeo" size="15" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></i></button>
+           <li><h3>Social Links</h3></li>
+            
+            <li class="subfoot"><a href=""><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" height="50px"></a></li>
+            &nbsp;&nbsp;
+            <li class="subfoot"><a href=""><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" height="50px"></a></li>
+        </ul>
+    </div>
+   </footer>
+</body>
+</html>
